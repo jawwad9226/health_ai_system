@@ -1,0 +1,41 @@
+{
+  "port": 3002,
+  "environment": "test",
+  "database": {
+    "sqlite": "sqlite:///health_ai_test.db",
+    "mongodb": "mongodb://localhost:27017/health_ai_system_test",
+    "redis": {
+      "host": "localhost",
+      "port": 6379,
+      "password": "",
+      "uri": "redis://localhost:6379/1"
+    },
+    "dbName": "health_ai_system_test"
+  },
+  "security": {
+    "secretKey": "test-health-ai-system-secret-key-2024",
+    "jwtSecretKey": "test-health-ai-jwt-secret-key-2024",
+    "jwtSecret": "test_secret_key_for_testing_purposes"
+  },
+  "cors": {
+    "origins": ["http://localhost:3000"],
+    "origin": "http://localhost:3000"
+  },
+  "api": {
+    "title": "Health AI System API (Test)",
+    "version": "0.1.0-test"
+  },
+  "mlModels": {
+    "path": "ml_models/test"
+  },
+  "features": {
+    "enablePerformanceLogging": false,
+    "enableRateLimiting": false
+  },
+  "logging": {
+    "level": "error"
+  },
+  "frontend": {
+    "url": "http://localhost:3000"
+  }
+}
